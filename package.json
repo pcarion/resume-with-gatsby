@@ -1,0 +1,21 @@
+{
+  "name": "resume-with-gatsby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^2.18.25",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-yaml": "^2.2.23",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
