@@ -1,17 +1,14 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
-const Resume = ({ data }) => {
+import Resume from '../components/resume';
+
+const Page = ({ data }) => {
   const resume = data.resumeYaml;
-  const { basics } = resume;
-  return (
-    <React.Fragment>
-      <h1>{basics.name}</h1>
-      <h2>{basics.email}</h2>
-    </React.Fragment>
-  );
+  return <Resume resume={resume} />;
 };
 
-export default Resume;
+export default Page;
 
 export const query = graphql`
   query MyQuery {
@@ -19,6 +16,74 @@ export const query = graphql`
       basics {
         email
         name
+        label
+        phone
+        url
+        summary
+        profiles {
+          network
+          url
+          username
+        }
+      }
+      work {
+        description
+        endDate(formatString: "MMM, YYYY")
+        highlights
+        location
+        name
+        startDate(formatString: "MMM, YYYY")
+        position
+        summary
+        url
+      }
+      volunteer {
+        endDate(formatString: "MMM, YYYY")
+        highlights
+        organization
+        position
+        startDate(formatString: "MMM, YYYY")
+        summary
+        url
+      }
+      education {
+        area
+        courses
+        endDate(formatString: "MMM, YYYY")
+        gpa
+        institution
+        startDate(formatString: "MMM, YYYY")
+        studyType
+      }
+      awards {
+        awarder
+        date(formatString: "MMM, YYYY")
+        summary
+        title
+      }
+      publications {
+        name
+        publisher
+        releaseDate(formatString: "MMM, YYYY")
+        summary
+        url
+      }
+      skills {
+        keywords
+        level
+        name
+      }
+      languages {
+        fluency
+        language
+      }
+      interests {
+        keywords
+        name
+      }
+      references {
+        name
+        reference
       }
     }
   }
