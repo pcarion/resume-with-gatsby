@@ -12,4 +12,4 @@ The theme used is [Flat](https://themes.jsonresume.org/theme/flat) by [Mattias E
 
 You can read more information here: https://pcarion.com/article/gatsby-resume
 
-[![Deploy to netlify](https://www.netlify.com/img/deploy/button.svg.)](https://app.netlify.com/start/deploy?repository=https://github.com/pcarion/resume-with-gatsby)
+[![Deploy to netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pcarion/resume-with-gatsby)
