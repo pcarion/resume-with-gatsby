@@ -7,5 +7,6 @@ module.exports = {
         path: `./resume`,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };
